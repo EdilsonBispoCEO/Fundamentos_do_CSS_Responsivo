@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color:#e9e3ec;
+}
+
+.container, section {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 36px;
+    background-color:#974432 ;
+    color: #fff;
+}
+
+.noticia img {
+    max-width: 100%;
+}
+
+.destaque h1 {
+    margin-left: 26.7em;
+    border-bottom: 3px solid #974432;
+}
+
+.destaque .noticia a {
+    display:flex;
+    font-size: 1em;
+}
+
+.destaque .noticia img {
+    margin-right: 20px;
+}
+
+
+h3 {
+    font-size:medium;
+    margin-top:1em;
+    
+}
+
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 1%;
+    row-gap: 4%;
+}
+
+h2 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #974432;
+}
+
+
+@Media screen and (max-width:767px) {
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    
+.destaque h1 {
+    margin-left: 26.7em;
+    border-bottom: 3px solid #974432;
+}
+    
+    .destaque .noticia a {
+        display: block;
+        font-size: 1em;
+    }
+    
+    .destaque .noticia img {
+        margin-right: 20px;
+    }
+
+    .noticias {
+        display: block;
+        grid-template-columns: repeat(3, 32.6%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    .noticias .noticia {
+        margin-bottom: 30px;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    .destaque .noticia a {
+        font-size: 1em;
+    }
+
+    .noticias {
+        grid-template-columns: repeat(2, 35%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        display: none;
+    }
+}
